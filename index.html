@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Road Template</title>
+    <!-- Css ler -->
+
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/theme/themes/humanity/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header Başlangıç -->
+    <section class="container-fluid header" id="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <!-- Navbar Kısmı -->
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <span class="text-warning">AUTO</span>
+                    <span class="text-white">ROAD</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#header" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#ourcar" class="nav-link">Our Car</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#ref" class="nav-link">Refferances</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <!-- Jumbotron Kısmı -->
+                <div class="col-md-8">
+                    <div class="jumbotron leftHeader text-white mb-0">
+                        <h1 class="display-4">
+                            Now <br>
+                            It's easy for you rent a
+                            car
+                        </h1>
+                        <p class="lead text-white">
+                            A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts
+                        </p>
+                    </div>
+                </div>
+                <!-- Form Alanı -->
+                <div class="col-md-4 py-4">
+                    <form action="">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group px-2">
+                                    <h5 class="card-title">
+                                        Make Your Trip
+                                    </h5>
+                                </div>
+                                <div class="form-group px-2">
+                                    <label for="">PICK-UP LOCATION</label>
+                                    <input type="text" class="form-control" placeholder="Enter Location..">
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-group w-50 px-2">
+                                        <label for="">PICK-UP DATE</label>
+                                        <input type="text" class="form-control" id="datepickerFirst" placeholder="Date First">
+                                    </div>
+                                    <div class="form-group w-50 px-2">
+                                        <label for="">DROP-OFF DATE</label>
+                                        <input type="text" class="form-control" id="datepickerLast" placeholder="Date Last">
+                                    </div>
+                                </div>
+                                <div class="form-group px-2">
+                                    <label for="">PICK-UP TIME</label>
+                                    <input type="text" class="form-control" id="datepickerPick" placeholder="Choose pick-up time">
+                                </div>
+                                <div class="form-group px-2">
+                                    <button class="btn btn-warning w-100 text-white p-3" type="button">Search Vehicle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Form Alanı Bitiş -->
+            </div>
+        </div>
+        <button class="backToTop" type="button"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+    </section>
+    <!-- Header Bitiş -->
+    <!-- botOfHeader Başlangıç -->
+    <section class="botOfHeader hide p-4">
+        <div class="container">
+            <form action="">
+                <div class="row py-3 mx-auto">
+                    <div class="col-md-2 mx-auto">
+                        <div class="form-group">
+                            <label for="">Model Select</label>
+                            <select name="model" id="model" class="form-control">
+                                <option selected>Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mx-auto">
+                        <div class="form-group">
+                            <label for="">Select Brand</label>
+                            <select name="model" id="model" class="form-control">
+                                <option value="0">Brand 1</option>
+                                <option value="0">Brand 1</option>
+                                <option value="0">Brand 1</option>
+                                <option value="0">Brand 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mx-auto">
+                        <div class="form-group">
+                            <label for="">Year Model</label>
+                            <select name="model" id="model" class="form-control">
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mx-auto">
+                        <div class="form-group">
+                            <label for="">Price Limit</label>
+                            <select name="model" id="model" class="form-control">
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                                <option value="0">Model 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mx-auto">
+                        <div class="form-group">
+                            <label for="" class="hidden"></label>
+                            <button class="btn btn-warning text-white w-100" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- botOfHeader Bitiş -->
+    <!-- Services Başlangıç -->
+    <section class="services hide" id="services">
+        <div class="beforeText">
+            <p>Our Services</p>
+            <h5>Our Services</h5>
+        </div>
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-md-3 text-center">
+                    <p>
+                        <i class="fas fa-tools fa-2x"></i>
+                        <span class="titleOurServices"> 24/7 Car Support</span>
+                    </p>
+                    <p>A small river named Duden flows by their place and supplies it with you</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <p>
+                        <i class="fas fa-tools fa-2x"></i>
+                        <span class="titleOurServices"> 24/7 Car Support</span>
+                    </p>
+                    <p>A small river named Duden flows by their place and supplies it with you</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <p>
+                        <i class="fas fa-tools fa-2x"></i>
+                        <span class="titleOurServices"> 24/7 Car Support</span>
+                    </p>
+                    <p>A small river named Duden flows by their place and supplies it with you</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <p>
+                        <i class="fas fa-tools fa-2x"></i>
+                        <span class="titleOurServices"> 24/7 Car Support</span>
+                    </p>
+                    <p>A small river named Duden flows by their place and supplies it with you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Bitiş -->
+    <!-- Offer Başlangıç -->
+    <section class="offer hide" id="ourcar">
+        <div class="beforeText">
+            <p>WHAT WE OFFER</p>
+            <h5>Choose Your Car</h5>
+        </div>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-md-3 my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-1.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2 shadow ">Book Now</button>
+                                <button class="btn btn-offer-left ml-2 shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-2.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-3.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-4.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-5.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-6.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-7.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-8.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow ">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-9.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-10.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-11.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  my-2">
+                    <div class="card shadow">
+                        <div class="img">
+                            <img src="images/car-12.jpg" class="card-img-top  offer-img" alt="">
+                            <div class="overlayOffer">
+                                <span>$30</span>
+                                <span>From / Day</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Mercedes Grand Sedan
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="button-group d-flex">
+                                <button class="btn btn-secondary mr-2  shadow">Book Now</button>
+                                <button class="btn btn-offer-left ml-2  shadow">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Offer Bitiş -->
+    <!-- How it works Başlangıç -->
+    <section class="works my-5 hide">
+        <div class="container-fluid imgWorks py-5">
+            <div class="overlay"></div>
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="imgText w-100 mx-auto">
+                            <p>Work Flow</p>
+                            <h5>How it works</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-route fa-3x my-4"></i>
+                        <p class="titleWorks">
+                            Pick Destination
+                        </p>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with you
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-route fa-3x my-4"></i>
+                        <p class="titleWorks">
+                            Pick Destination
+                        </p>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with you
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-route fa-3x my-4"></i>
+                        <p class="titleWorks">
+                            Pick Destination
+                        </p>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with you
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <i class="fas fa-route fa-3x my-4"></i>
+                        <p class="titleWorks">
+                            Pick Destination
+                        </p>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with you
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How it works Bitiş -->
+    <!-- Happy Client Başlangıç -->
+    <section class="happyClient my-5 hide" id="ref">
+        <div class="beforeText">
+            <p>TESTIMONIAL</p>
+            <h5>Happy Clients</h5>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-4">
+                    <div class="card shadow">
+                        <div class="card-img">
+                            <img src="images/person_1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </h5>
+                            <p class="card-text">
+                                Roger Scott
+                            </p>
+                            <p class="text-muted">
+                                Marketing Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="card shadow">
+                        <div class="card-img">
+                            <img src="images/person_1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </h5>
+                            <p class="card-text">
+                                Roger Scott
+                            </p>
+                            <p class="text-muted">
+                                Marketing Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="card shadow">
+                        <div class="card-img">
+                            <img src="images/person_1.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </h5>
+                            <p class="card-text">
+                                Roger Scott
+                            </p>
+                            <p class="text-muted">
+                                Marketing Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Happy Client Bitiş -->
+    <!-- About us Başlangıç -->
+    <section class="aboutUs my-5 hide" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/about.jpg" class="h-100 w-100 shadow aboutImg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>ABOUT US</p>
+                    <h4 class="aboutTitle">Choose A Perfect Car</h4>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                    <button class="btn shadow">Search Vehicle</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us Bitiş -->
+    <!-- Footer Başlangıç -->
+    <section class="footer text-white mt-5 p-5 hide" id="contact">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-3 pt-5">
+                    <h5 class="title">About Autoroad</h5>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="socialLinks">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-3  pt-5">
+                    <h5 class="title">
+                        Information
+                    </h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Term and Conditions</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3  pt-5">
+                    <h5 class="title">
+                        Customer Support
+                    </h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Term and Conditions</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3  pt-5">
+                    <h5 class="title">
+                        Have a Questions ?
+                    </h5>
+                    <ul>
+                        <li><a href="#"><span><i class="fas fa-map-marker-alt"></i></span>203 Fake St. Mountain View, San Francisco, California, USA</a></li>
+                        <li><a href="#"><span><i class="fas fa-phone"></i></span>+2 369 258 147</a></li>
+                        <li><a href="#"><span><i class="fas fa-envelope"></i></span>harundogdu06@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto pt-5">
+                    <p class="text-white">Copyright ©2020 All rights reserved | This template is made with by Ancyrâ</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer Bitiş -->
+    <!--  Scriptler -->
+    <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body></html>

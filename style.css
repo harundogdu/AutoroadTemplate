@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Alanı */
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/bg_1.jpg);
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms all;
+}
+
+.navbar-scroll {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 100px;
+    transition: 500ms all;
+}
+
+.header .collapse {
+    padding: 10px 0;
+}
+
+.header .container .navbar a span {
+    font-weight: 600;
+}
+
+.navbar-nav .active > a {
+    color: #ffc107 !important;
+    font-weight: 600;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 300;
+}
+
+.navbar-nav li a:hover {
+    color: #ffc107 !important;
+}
+
+/* Jumbotron Kısmı */
+.leftHeader {
+    background: transparent !important;
+    margin-top: 25px;
+}
+
+.leftHeader h1 {
+    padding: 0 90px 0 0;
+}
+
+.leftHeader p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Form Alanı */
+form .card .card-body .form-group {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.form-group button {
+    background-color: #fc983c !important;
+}
+
+.header .form-group label {
+    font-size: 13px !important;
+}
+
+/* Header 'ı altındaki kısım*/
+
+.botOfHeader .col-md-2:last-child {
+    margin-top: 5px;
+}
+
+/* Services Kısımı */
+
+.titleOurServices {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    text-align: right;
+}
+
+.services .col-md-3 i {
+    font-size: 25px;
+    color: #fc983c;
+
+}
+
+.services .col-md-3 p:last-child {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #454545;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+/* before Text Alanı*/
+
+.beforeText {
+    text-align: center;
+    padding: 25px;
+    padding-top: 0;
+    margin: 15px 0;
+}
+
+.beforeText p:first-child {
+    color: #fc983c;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.beforeText h5 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* Offer Alanı*/
+.offer .card h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offer .card p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.offer .offer-img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.offer .img {
+    position: relative;
+}
+
+.offer .overlayOffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(88, 88, 88, 0.7);
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.offer .overlayOffer span:first-child {
+    color: #fc983c;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.offer .btn-offer {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    color: #fff;
+    font-weight: 600;
+}
+
+.offer .btn-offer-left {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* how it works*/
+.works {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.works .imgWorks {
+    background: url(images/bg_2.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.works .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgText {
+    text-align: center;
+    padding: 25px;
+    padding-top: 0;
+    margin: 15px 0;
+}
+
+.imgText p:first-child {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.imgText h5 {
+    font-weight: 300;
+    font-size: 52px;
+}
+
+.works .col-md-3 i {
+    padding: 25px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.works .col-md-3 .titleWorks {
+    font-size: 24px;
+}
+
+.works .col-md-3 {
+    cursor: pointer;
+    transition: 500ms all ease;
+
+}
+
+.works .col-md-3:hover {
+    color: #fc983c !important;
+}
+
+.works .col-md-3:hover > i {
+    border: 4px solid #fc983c;
+}
+
+/* happyClient */
+.happyClient .card {
+    transition: 300ms all ease-in;
+}
+
+.happyClient .card:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.happyClient .card-img {
+    width: 150px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.happyClient .card-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.happyClient .card-title,
+.happyClient .card-text,
+.happyClient .text-muted {
+    text-align: center;
+}
+
+.happyClient .card-text {
+    color: #fc983c !important;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* About US*/
+.aboutUs .col-md-6 p:first-child {
+    padding-top: 15px;
+    color: #fc983c;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.aboutUs .col-md-6 h4 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.aboutUs .col-md-6 p:nth-child(3),
+.aboutUs .col-md-6 p:nth-child(4) {
+    font-weight: 300;
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.aboutUs button {
+    background-color: #fc983c;
+    color: #fff;
+}
+
+.aboutUs button:hover {
+    color: #fff;
+}
+
+.aboutUs .aboutImg {
+    object-fit: cover;
+}
+
+/* Footer*/
+.footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000 !important;
+    line-height: 1.8;
+}
+
+.footer .title {
+    font-size: 26px;
+    padding: 10px 5px;
+}
+
+.footer p:first-child {
+    padding: 10px 8px;
+}
+
+.footer p:last-child {
+    text-align: center;
+}
+
+.footer .socialLinks i {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 300ms all ease;
+    background-color: #171717;
+}
+
+.footer .socialLinks i:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li a {
+    color: #fff;
+    display: block;
+    text-align: left;
+    padding: 8px 0px 8px 10px;
+    text-decoration: none;
+}
+
+.footer ul li a span {
+    margin-right: 5px;
+}
+
+/* backTopTop Alanı */
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: #fc983c;
+    background-color: transparent;
+    border: none;
+    z-index: 9999;
+    display: none;
+}
+
+.backToTop:focus {
+    outline: none;
+    border: none;
+}
+
+/* media Query*/
+
+@media screen and (max-width:768px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .leftHeader p {
+        font-size: 14px !important;
+        color: #fff !important;
+        font-weight: 600;
+    }
+
+
+
+    .leftHeader h1 {
+        padding: 0 !important;
+    }
+
+    .button-group button {
+        width: 49.49%;
+    }
+
+    .aboutUs .col-md-6 h4 {
+        font-size: 24px !important;
+    }
+
+    .navbar-scroll {
+        padding: 0.5rem 1rem;
+    }
+
+    /*
+    
+    .happyClient {
+        margin-top: 900px !important;
+    }
+
+    
+     .header {
+        height: 150vh;
+    }
+    
+    .works .imgWorks {
+        height: 240vh;
+    }
+    .footer {
+        height: 235vh;
+    }
+    */
+
+}
+
+/* Fade Olayları */
+.hide {
+    opacity: 0;
+}
